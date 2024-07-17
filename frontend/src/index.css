@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./assets/font/GildaDisplay-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url(./assets/font/BarlowCondensed-Medium.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url(./assets/font/Barlow-Medium.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url(./assets/font/Rubik-Medium.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./assets/font/IslandMoments-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url(./assets/font/PlayfairDisplay-Medium.ttf) format('ttf');
+}
