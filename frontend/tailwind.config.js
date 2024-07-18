@@ -14,6 +14,9 @@ export default {
         island: ['Island Moments', 'cursive'],
         playfair: ['Playfair Display', 'serif'],
       },
+      colors: {
+        'coklat': '#aa8453'
+      }
     },
   },
   plugins: [],
