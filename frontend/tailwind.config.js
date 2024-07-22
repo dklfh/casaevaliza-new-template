@@ -15,7 +15,14 @@ export default {
         playfair: ['Playfair Display', 'serif'],
       },
       colors: {
-        'coklat': '#aa8453'
+        'coklat': '#aa8453',
+        'bintang': '#e4a853'
+      },
+      letterSpacing: {
+        custom: '0.375em'
+      },
+      height: {
+        '900': '56.25rem',
       }
     },
   },

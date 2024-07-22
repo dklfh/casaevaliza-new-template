@@ -45,3 +45,10 @@
   font-style: normal;
   src: url(./assets/font/PlayfairDisplay-Medium.ttf) format('ttf');
 }
+
+.swiper-pagination-bullet {
+  @apply w-3 h-3 border-2 border-white;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-coklat border-coklat;
+}
