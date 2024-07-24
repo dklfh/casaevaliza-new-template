@@ -12,6 +12,7 @@ function Navbar() {
   const [isOpenServices, setIsOpenServices] = useState(false);
   const [isOpenAccommodation, setIsOpenAccommodation] = useState(false);
   const [isOpenFacilities, setIsOpenFacilities] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,11 +34,15 @@ function Navbar() {
     setIsNavOpen(!isNavOpen);
   };
 
+  const isActive = (path) => location.pathname === path ? 'text-coklat' : 'text-regular';
+  const isActive2 = (path) => location.pathname === path ? 'bg-black text-white' : 'bg-white text-black';
+  const isActive3 = (path) => location.pathname === path ? 'border-coklat' : 'lg:hover:border-coklat';
+
   return (
     <div>
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ease-linear transform ${isScrolled ? 'bg-white dark:bg-gray-900 shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between lg:justify-center xl:justify-between mx-auto px-4 py-1">
-          <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link to="/" className={`flex items-center space-x-3 rtl:space-x-reverse ${isActive('/')}`}>
             <img src={logo} className="w-48" alt="casaevaliza Logo" />
           </Link>
           <button
@@ -68,14 +73,14 @@ function Navbar() {
           <div className="hidden w-full lg:block lg:w-auto font-gilda text-sm">
             <ul className={`flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row items-center ${isScrolled ? 'text-black' : 'text-white'} lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700`}>
               <li>
-                <Link to="/about" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">About Casa Evaliza</Link>
+                <Link to="/about" className={`block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/about')}`}>About Casa Evaliza</Link>
               </li>
               <li
                 className='relative'
                 onMouseEnter={() => setIsOpenAccommodation(true)}
                 onMouseLeave={() => setIsOpenAccommodation(false)}>
                 <Link to="/acco"
-                  className="flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">
+                  className={`flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/acco')}`}>
                   Accommodation
                   <svg
                     className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenAccommodation ? 'rotate-180' : ''}`}
@@ -95,16 +100,16 @@ function Navbar() {
                   className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenAccommodation ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
-                      <Link to="/master" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Master Suite</Link>
+                      <Link to="/master" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/master')}`}>Master Suite</Link>
                     </li>
                     <li>
-                      <Link to="/guest" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Guest Bedroom</Link>
+                      <Link to="/guest" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/guest')}`}>Guest Bedroom</Link>
                     </li>
                     <li>
-                      <Link to="/living" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Living & Dining Pavilion</Link>
+                      <Link to="/living" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/living')}`}>Living & Dining Pavilion</Link>
                     </li>
                     <li>
-                      <Link to="/mediaroom" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Media Room</Link>
+                      <Link to="/mediaroom" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/mediaroom')}`}>Media Room</Link>
                     </li>
                   </ul>
                 </div>
@@ -114,7 +119,7 @@ function Navbar() {
                 onMouseEnter={() => setIsOpenFacilities(true)}
                 onMouseLeave={() => setIsOpenFacilities(false)}>
                 <Link to="/facilities"
-                  className="flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">
+                  className={`flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/facilities')}`}>
                   Facilities
                   <svg
                     className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenFacilities ? 'rotate-180' : ''}`}
@@ -134,13 +139,13 @@ function Navbar() {
                   className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenFacilities ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
-                      <Link to="/kitchen" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Kitchen</Link>
+                      <Link to="/kitchen" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/kitchen')}`}>Kitchen</Link>
                     </li>
                     <li>
-                      <Link to="/swimmingpool" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Swimming Pool & Garden</Link>
+                      <Link to="/swimmingpool" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/swimmingpool')}`}>Swimming Pool & Garden</Link>
                     </li>
                     <li>
-                      <Link to="/privategym" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Private Gym</Link>
+                      <Link to="/privategym" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/privategym')}`}>Private Gym</Link>
                     </li>
                   </ul>
                 </div>
@@ -150,7 +155,7 @@ function Navbar() {
                 onMouseEnter={() => setIsOpenServices(true)}
                 onMouseLeave={() => setIsOpenServices(false)}>
                 <Link to="/services"
-                  className="flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">
+                  className={`flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/services')}`}>
                   Services
                   <svg
                     className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenServices ? 'rotate-180' : ''}`}
@@ -170,26 +175,26 @@ function Navbar() {
                   className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenServices ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
-                      <Link to="/foodbeveranges" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Food & Beverages</Link>
+                      <Link to="/foodbeverages" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/foodbeverages')}`}>Food & Beverages</Link>
                     </li>
                     <li>
-                      <Link to="/spaservices" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Spa Services</Link>
+                      <Link to="/spaservices" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/spaservices')}`}>Spa Services</Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <Link to="/location" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Location</Link>
+                <Link to="/location" className={`block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/location')}`}>Location</Link>
               </li>
               <li>
-                <Link to="/gallery" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Gallery</Link>
+                <Link to="/gallery" className={`block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/gallery')}`}>Gallery</Link>
               </li>
               <li>
-                <Link to="/contact" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Contact Us</Link>
+                <Link to="/contact" className={`block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/contact')}`}>Contact Us</Link>
               </li>
               <li>
                 <Link to="/france" className="block py-2 px-3 rounded lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
-                  <img className="rounded-full size-7 lg:hover:border-coklat transition-colors duration-300 border-4" src={france} alt="image description" />
+                  <img className={`rounded-full size-7 transition-colors duration-300 border-4 ${isActive3('/france')}`} src={france} alt="image description" />
                 </Link>
               </li>
             </ul>
@@ -297,7 +302,7 @@ function Navbar() {
             <Link to="/contact" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Contact Us</Link>
           </li>
           <li>
-            <Link to="/france" className="flex items-center py-2 px-3 rounded lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
+            <Link to="/france" className={`flex items-center py-2 px-3 rounded lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent ${isActive('/france')}`}>
               France
               <img className="rounded-full size-7 border-4 ml-4" src={france} alt="image description" />
             </Link>

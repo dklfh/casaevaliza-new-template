@@ -28,6 +28,7 @@ import Services from "./pages/services"
 import Spaservices from "./pages/spaservices"
 import Swimmingpool from "./pages/swimmingpool"
 import Mediaroom from "./pages/mediaroom"
+import Location from "./pages/location"
 
 function App() {
   return (
