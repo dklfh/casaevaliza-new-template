@@ -1,12 +1,17 @@
 import React from 'react'
+import Navbar from '../component/navbar/navbar'
+import LivingdiningandpavImg from '../component/livingdiningandpavImg'
+import Liv1 from '../component/Liv1'
 
-function Livingdining() {
+
+const livingdiningandpav = () => {
   return (
     <div>
       <Navbar/>
-      <Footer/>
+      <LivingdiningandpavImg/>
+      <Liv1/>
     </div>
   )
 }
 
-export default Livingdining
+export default livingdiningandpav

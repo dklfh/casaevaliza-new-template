@@ -16,18 +16,21 @@ const Guest1 = () => {
             </div>
         </div>
         <span class="mt-2 sm:mt-auto text-coklat mb-2">A EXPERIENCE FOR THE SENSE</span>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-gilda">Master Suite</h1>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-gilda">Guest Bedroom</h1>
         <p class="text-gray-600 mt-4 leading-relaxed font-barlow text-base sm:text-lg">
-        The Master Suite encompasses the ground floor of the two-storey building. The suite is dominated by a king-size bed with a yielding padded headboard, while the wall behind displays a carved panel from a traditional house in Toraja, Sulawesi. In front of the bed is a pair of large wooden statues, depicting a Javanese wedding couple.
+        The three air-conditioned guest bedrooms are located on the upper floor, accessed by a timber-clad staircase. Two of the rooms are bordered by a delightful covered balcony with a timber floor and elevated views of the garden. The balcony runs the length of the building and is furnished with a sofa, rattan chairs and a glass-topped table.
         </p>
         <p class="text-gray-600 mt-4 leading-relaxed font-barlow text-base sm:text-lg">
-        Generously-sized, this bedroom also incorporates a sitting area furnished with a daybed and an antique desk. A 45” satellite-channel TV and DVD player rests on an antique ‘gerobok’ rice chest, juxtaposed with a window to one side that overlooks a small pebbled garden.
+        The 'Poster Room' presents a fresh green and white colonial theme, with a romantic, king-size four poster bed, framed botanical prints on the walls and two white wicker planter chairs.
         </p>
         <p class="text-gray-600 mt-4 leading-relaxed font-barlow text-base sm:text-lg">
-        Accessed via dramatic sliding doors, is the grand, ensuite, air-conditioned bathroom. It features an avocado-green terrazzo floor, a huge central bathtub, and two lazy chairs. A double vanity unit is fashioned in the same green terrazzo and presents two well-lit mirrors and twin washbasins. There is also a walk-in shower and a toilet hidden within an alcove. Floor-to-ceiling mirrored doors slide open to reveal a dressing room, fitted with a wall of white wardrobes.
+        The Kids' Room has a bunk bed where up to 5 kids can easily sleep. Thanks to an extension on a gorgeous featherbed, the room can be converted into a king size bedroom suitable for adult guests and couples.
         </p>
         <p class="text-gray-600 mt-4 leading-relaxed font-barlow text-base sm:text-lg">
-        Sliding glass doors from the bedroom open onto a covered veranda that runs the length of the building and looks out over the garden and is complimented with a wooden Kartini sofa and a brass gong.
+        On the south side of the villa is the slightly smaller Zen Room, furnished with a queen size bed and its own ensuite bathroom with shower.
+        </p>
+        <p class="text-gray-600 mt-4 leading-relaxed font-barlow text-base sm:text-lg">
+        All of these bedrooms are equipped with 30" flat screen TVs and DVD players. Two of the ensuite bathrooms are fitted with bathtubs, and all three have walk-in rain showers.
         </p>
     </div>
 </div>

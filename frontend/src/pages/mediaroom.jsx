@@ -1,14 +1,16 @@
 import React from 'react'
 import Navbar from '../component/navbar/navbar'
-import Footer from '../component/footer/footer'
+import MediaroomImg from '../component/MediaroomImg'
+import Media1 from '../component/Media1'
 
-function Mediaroom() {
+const mediaroom = () => {
   return (
     <div>
       <Navbar/>
-      <Footer/>
+      <MediaroomImg/>
+      <Media1/>
     </div>
   )
 }
 
-export default Mediaroom
+export default mediaroom
