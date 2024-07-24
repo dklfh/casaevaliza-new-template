@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../assets/image/logo casa.png';
 import france from '../../assets/image/france.jpg';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,9 +37,9 @@ function Navbar() {
     <div>
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ease-linear transform ${isScrolled ? 'bg-white dark:bg-gray-900 shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between lg:justify-center xl:justify-between mx-auto px-4 py-1">
-          <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} className="w-48" alt="casaevaliza Logo" />
-          </a>
+          </Link>
           <button
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden bg-gray-100 text-black focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -67,14 +68,13 @@ function Navbar() {
           <div className="hidden w-full lg:block lg:w-auto font-gilda text-sm">
             <ul className={`flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row items-center ${isScrolled ? 'text-black' : 'text-white'} lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700`}>
               <li>
-                <a href="#" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">About Casa Evaliza</a>
+                <Link to="/about" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">About Casa Evaliza</Link>
               </li>
               <li
                 className='relative'
                 onMouseEnter={() => setIsOpenAccommodation(true)}
                 onMouseLeave={() => setIsOpenAccommodation(false)}>
-                <a
-                  href="#"
+                <Link to="/acco"
                   className="flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">
                   Accommodation
                   <svg
@@ -90,21 +90,21 @@ function Navbar() {
                       strokeWidth="2"
                       d="m1 1 4 4 4-4" />
                   </svg>
-                </a>
+                </Link>
                 <div
                   className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenAccommodation ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Master Suite</a>
+                      <Link to="/master" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Master Suite</Link>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Guest Bedroom</a>
+                      <Link to="/guest" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Guest Bedroom</Link>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Living & Dining Pavilion</a>
+                      <Link to="/living" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Living & Dining Pavilion</Link>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Media Room</a>
+                      <Link to="/mediaroom" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Media Room</Link>
                     </li>
                   </ul>
                 </div>
@@ -113,8 +113,7 @@ function Navbar() {
                 className='relative'
                 onMouseEnter={() => setIsOpenFacilities(true)}
                 onMouseLeave={() => setIsOpenFacilities(false)}>
-                <a
-                  href="#"
+                <Link to="/facilities"
                   className="flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">
                   Facilities
                   <svg
@@ -130,18 +129,18 @@ function Navbar() {
                       strokeWidth="2"
                       d="m1 1 4 4 4-4" />
                   </svg>
-                </a>
+                </Link>
                 <div
                   className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenFacilities ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Kitchen</a>
+                      <Link to="/kitchen" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Kitchen</Link>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Swimming Pool & Garden</a>
+                      <Link to="/swimmingpool" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Swimming Pool & Garden</Link>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Private Gym</a>
+                      <Link to="/privategym" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Private Gym</Link>
                     </li>
                   </ul>
                 </div>
@@ -150,8 +149,7 @@ function Navbar() {
                 className='relative'
                 onMouseEnter={() => setIsOpenServices(true)}
                 onMouseLeave={() => setIsOpenServices(false)}>
-                <a
-                  href="#"
+                <Link to="/services"
                   className="flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">
                   Services
                   <svg
@@ -167,32 +165,32 @@ function Navbar() {
                       strokeWidth="2"
                       d="m1 1 4 4 4-4" />
                   </svg>
-                </a>
+                </Link>
                 <div
                   className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenServices ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Food & Beverages</a>
+                      <Link to="/foodbeveranges" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Food & Beverages</Link>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Spa Services</a>
+                      <Link to="/spaservices" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Spa Services</Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Location</a>
+                <Link to="/location" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Location</Link>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Gallery</a>
+                <Link to="/gallery" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Gallery</Link>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Contact Us</a>
+                <Link to="/contact" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Contact Us</Link>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 rounded lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
+                <Link to="/france" className="block py-2 px-3 rounded lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
                   <img className="rounded-full size-7 lg:hover:border-coklat transition-colors duration-300 border-4" src={france} alt="image description" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -204,11 +202,11 @@ function Navbar() {
         className={`fixed top-0 right-0 h-full w-72 shadow-lg font-gilda transition-all duration-500 ease-linear transform ${isNavOpen ? 'translate-x-0' : 'translate-x-full'} ${isScrolled ? 'bg-white dark:bg-gray-800 shadow-lg' : 'bg-transparent text-white'} z-40 overflow-y-auto`}>
         <ul className="p-4 pr-10 mt-24 space-y-4">
           <li>
-            <a href="#" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">About Casa Evaliza</a>
+            <Link to="/about" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">About Casa Evaliza</Link>
           </li>
           <li className={`relative ${isAccommodationDropdownOpen ? 'mb-12' : ''}`}>
             <div className='flex justify-between items-center'>
-              <a href="#" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Accommodation</a>
+              <Link to="/acco" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Accommodation</Link>
               <svg
                 onClick={() => setIsAccommodationDropdownOpen(!isAccommodationDropdownOpen)}
                 className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isAccommodationDropdownOpen ? 'rotate-180' : ''}`}
@@ -222,23 +220,23 @@ function Navbar() {
             <div className={`uppercase font-semibold  bg-coklat divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ease-in-out overflow-hidden ${isAccommodationDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
               <ul className="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Master Suite</a>
+                  <Link to="/mastersuite" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Master Suite</Link>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Guest Bedroom</a>
+                  <Link to="/guest" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Guest Bedroom</Link>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Living & Dining Pavilion</a>
+                  <Link to="/living" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Living & Dining Pavilion</Link>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Media Room</a>
+                  <Link to="/mediaroom" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Media Room</Link>
                 </li>
               </ul>
             </div>
           </li>
           <li className={`relative ${isFacilitiesDropdownOpen ? 'mb-12' : ''}`}>
             <div className='flex justify-between items-center'>
-              <a href="#" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Facilities</a>
+              <Link to="/facilities" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Facilities</Link>
               <svg
                 onClick={() => setIsFacilitiesDropdownOpen(!isFacilitiesDropdownOpen)}
                 className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isFacilitiesDropdownOpen ? 'rotate-180' : ''}`}
@@ -252,22 +250,22 @@ function Navbar() {
             <div className={`uppercase font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ease-in-out overflow-hidden ${isFacilitiesDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
               <ul className="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Kitchen</a>
+                  <Link to="/kitchen" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Kitchen</Link>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Swimming Pool & Garden</a>
+                  <Link to="/swimmpingpool" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Swimming Pool & Garden</Link>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Private Gym</a>
+                  <Link to="/privategym" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Private Gym</Link>
                 </li>
               </ul>
             </div>
           </li>
           <li className={`relative ${isServicesDropdownOpen ? 'mb-12' : ''}`}>
             <div className='flex justify-between items-center'>
-              <a href="#" className="flex items-center py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
+              <Link to="/services" className="flex items-center py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
                 Services
-              </a>
+              </Link>
               <svg
                 onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
                 className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isServicesDropdownOpen ? 'rotate-180' : ''}`}
@@ -281,28 +279,28 @@ function Navbar() {
             <div className={`uppercase font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ease-in-out overflow-hidden ${isServicesDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
               <ul className="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Food & Beverages</a>
+                  <Link to="/foodbeverages" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Food & Beverages</Link>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Spa Services</a>
+                  <Link to="/spaservices" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Spa Services</Link>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="#" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Location</a>
+            <Link to="/Locaton" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Location</Link>
           </li>
           <li>
-            <a href="#" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Gallery</a>
+            <Link to="/gallery" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Gallery</Link>
           </li>
           <li>
-            <a href="#" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Contact Us</a>
+            <Link to="/contact" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Contact Us</Link>
           </li>
           <li>
-            <a href="#" className="flex items-center py-2 px-3 rounded lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
+            <Link to="/france" className="flex items-center py-2 px-3 rounded lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
               France
               <img className="rounded-full size-7 border-4 ml-4" src={france} alt="image description" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
