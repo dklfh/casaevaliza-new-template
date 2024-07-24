@@ -10,6 +10,12 @@ import Spa1 from "./component/Spa1"
 import EnjoyaLuxuryExperience from "./component/EnjoyaLuxuryExperience"
 import WhatClientSay from "./component/WhatClientSay"
 import Ourroompres from "./component/Ourroompres"
+import Hotelfacilities from "./component/Hotelfacilities"
+import About from "./pages/about"
+import Acco from "./pages/acco"
+import Masterroom from "./pages/masterroom"
+import Guestbedroom from "./pages/guestbedroom"
+
 function App() {
   return (
     <>
@@ -25,6 +31,11 @@ function App() {
           <Route path='/whatclientsay' element = {<WhatClientSay/>}></Route>
           <Route path='/enjoylux' element = {<EnjoyaLuxuryExperience/>}></Route>
           <Route path='/ourroompres' element = {<Ourroompres/>}></Route>
+          <Route path='/hotelfa' element = {<Hotelfacilities/>}></Route>
+          <Route path='/about' element = {<About/>}></Route>
+          <Route path='/acco' element = {<Acco/>}></Route>
+          <Route path='/master' element = {<Masterroom/>}></Route>
+          <Route path='/guest' element = {<Guestbedroom/>}></Route>
         </Routes>
       </Router>
     </>
