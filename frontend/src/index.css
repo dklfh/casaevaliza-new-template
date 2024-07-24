@@ -49,6 +49,21 @@
 .swiper-pagination-bullet {
   @apply w-3 h-3 border-2 border-white;
 }
+
 .swiper-pagination-bullet-active {
   @apply bg-coklat border-coklat;
+}
+
+@layer utilities {
+  .btn::before {
+    content: "";
+    @apply absolute left-0 top-0 w-full h-full bg-black;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+  }
+
+  .btn:hover::before {
+    transform: translateX(0);
+  }
 }

@@ -67,7 +67,7 @@ function Navbar() {
           <div className="hidden w-full lg:block lg:w-auto font-gilda text-sm">
             <ul className={`flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row items-center ${isScrolled ? 'text-black' : 'text-white'} lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700`}>
               <li>
-                <a href="#" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 transition-colors duration-300">About Casa Evaliza</a>
+                <a href="#" className="block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">About Casa Evaliza</a>
               </li>
               <li
                 className='relative'
