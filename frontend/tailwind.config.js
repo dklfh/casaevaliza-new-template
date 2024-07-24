@@ -16,14 +16,35 @@ export default {
       },
       colors: {
         'coklat': '#aa8453',
-        'bintang': '#e4a853'
+        'bintang': '#e4a853',
+        'text': '#222222'
       },
       letterSpacing: {
         custom: '0.375em'
       },
       height: {
         '900': '56.25rem',
-      }
+      },
+      padding: {
+        '100': '100px',
+        '130': '130px'
+      },
+      fontSize: {
+        '15': ['15px', {
+          lineHeight: '1.75em'
+        }],
+        '45': ['45px', {
+          lineHeight: '1.25em'
+        }],
+        '40': '40px'
+      },
+      maxWidth: {
+        '1140': '71.25rem',
+        '960': '60rem'
+      },
+      backgroundAttachment: {
+        'fixed': 'fixed',
+      },
     },
   },
   plugins: [],
