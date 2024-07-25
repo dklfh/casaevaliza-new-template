@@ -71,12 +71,12 @@ function Navbar() {
             )}
           </button>
           <div className="hidden w-full lg:block lg:w-auto font-gilda text-sm">
-            <ul className={`flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row items-center ${isScrolled ? 'text-black' : 'text-white'} lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700`}>
+            <ul className={`flex flex-col h-20 p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row items-center ${isScrolled ? 'text-black' : 'text-white'} lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700`}>
               <li>
                 <Link to="/about" className={`block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/about')}`}>About Casa Evaliza</Link>
               </li>
               <li
-                className='relative'
+                className='relative h-full flex'
                 onMouseEnter={() => setIsOpenAccommodation(true)}
                 onMouseLeave={() => setIsOpenAccommodation(false)}>
                 <Link to="/acco"
@@ -97,7 +97,7 @@ function Navbar() {
                   </svg>
                 </Link>
                 <div
-                  className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenAccommodation ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
+                  className={`absolute top-20 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenAccommodation ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
                       <Link to="/mastersuite" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/master')}`}>Master Suite</Link>
@@ -115,7 +115,7 @@ function Navbar() {
                 </div>
               </li>
               <li
-                className='relative'
+                className='relative h-full flex'
                 onMouseEnter={() => setIsOpenFacilities(true)}
                 onMouseLeave={() => setIsOpenFacilities(false)}>
                 <Link to="/facilities"
@@ -136,7 +136,7 @@ function Navbar() {
                   </svg>
                 </Link>
                 <div
-                  className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenFacilities ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
+                  className={`absolute top-20 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenFacilities ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
                       <Link to="/kitchen" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/kitchen')}`}>Kitchen</Link>
@@ -151,7 +151,7 @@ function Navbar() {
                 </div>
               </li>
               <li
-                className='relative'
+                className='relative h-full flex'
                 onMouseEnter={() => setIsOpenServices(true)}
                 onMouseLeave={() => setIsOpenServices(false)}>
                 <Link to="/services"
@@ -172,7 +172,7 @@ function Navbar() {
                   </svg>
                 </Link>
                 <div
-                  className={`absolute top-14 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenServices ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
+                  className={`absolute top-20 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenServices ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
                       <Link to="/foodbeverages" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/foodbeverages')}`}>Food & Beverages</Link>
