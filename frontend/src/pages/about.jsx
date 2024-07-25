@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from '../component/navbar/navbar'
-import Aboutimg from '../component/AboutImg'
 import Footer from '../component/footer/footer'
 import Header from '../component/header'
 import KitchenImg from '../component/TemplateImg'

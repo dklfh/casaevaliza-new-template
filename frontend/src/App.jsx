@@ -2,7 +2,6 @@ import React from "react"
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom"
 import Home from "./pages/home"
 import Restaurant from "./component/Restaurant"
-import About1 from "./component/About1"
 import OtherService from "./component/OtherService"
 import Home1 from "./component/Home1"
 import Gallery1 from "./component/Gallery1"
@@ -13,7 +12,6 @@ import Ourroompres from "./component/Ourroompres"
 import Hotelfacilities from "./component/Hotelfacilities"
 import About from "./pages/about"
 import Acco from "./pages/acco"
-import Masterroom from "./pages/masterroom"
 import Guestbedroom from "./pages/guestbedroom"
 import Contactus from "./pages/contactus"
 import Facilities from "./pages/facilities"
@@ -38,7 +36,6 @@ function App() {
           <Route path='/' element = {<Home/>}></Route>
           <Route path='/about' element = {<About/>}></Route>
           <Route path='/acco' element = {<Acco/>}></Route>
-          <Route path='/master' element = {<Masterroom/>}></Route>
           <Route path='/guest' element = {<Guestbedroom/>}></Route>
           <Route path='/contact' element = {<Contactus/>}></Route>
           <Route path='/facilities' element = {<Facilities/>}></Route>
