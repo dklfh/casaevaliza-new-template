@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaStar } from "react-icons/fa6";
 
-const Template1 = ({ subtitle, content }) => {
+const Templateservices = ({ subtitle, content }) => {
   return (
     <div className="bg-white text-gray-800 font-playfair my-[40px] sm:my-[60px] md:my-[80px]">
       <div className="max-w-4xl mx-auto p-4 sm:p-6 md:p-8">
@@ -30,4 +30,4 @@ const Template1 = ({ subtitle, content }) => {
   );
 };
 
-export default Template1;
+export default Templateservices;

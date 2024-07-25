@@ -1,6 +1,6 @@
 import React from 'react';
 
-const KitchenImg = ({ backgroundImage, headingText, subheadingText, changeContent }) => {
+const Templateimg = ({ backgroundImage, headingText, subheadingText, changeContent }) => {
   return (
     <div className="w-auto h-[410px] bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="bg-black bg-opacity-50 w-full h-full">
@@ -15,4 +15,4 @@ const KitchenImg = ({ backgroundImage, headingText, subheadingText, changeConten
   );
 };
 
-export default KitchenImg;
+export default Templateimg;
