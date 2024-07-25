@@ -41,9 +41,9 @@ function Navbar() {
   return (
     <div>
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ease-linear transform ${isScrolled ? 'bg-white dark:bg-gray-900 shadow-lg' : 'bg-transparent'}`}>
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between lg:justify-center xl:justify-between mx-auto px-4 py-1">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between lg:justify-center xl:justify-between mx-auto lg:px-24 px-4 py-1">
           <Link to="/" className={`flex items-center space-x-3 rtl:space-x-reverse ${isActive('/')}`}>
-            <img src={logo} className="w-48" alt="casaevaliza Logo" />
+            <img src={logo} className="md:w-48 w-32" alt="casaevaliza Logo" />
           </Link>
           <button
             type="button"
