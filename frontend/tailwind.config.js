@@ -18,7 +18,8 @@ export default {
         'coklat': '#aa8453',
         'bintang': '#e4a853',
         'text': '#222222',
-        'footer': '#333333'
+        'footer': '#333333',
+        'text2': '#666666',
       },
       letterSpacing: {
         custom: '0.375em'
