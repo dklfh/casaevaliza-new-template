@@ -20,6 +20,7 @@ export default {
         'text': '#222222',
         'footer': '#333333',
         'text2': '#666666',
+        'bgcoklat': '#f8f5f0'
       },
       letterSpacing: {
         custom: '0.375em'
