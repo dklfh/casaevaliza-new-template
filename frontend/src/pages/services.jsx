@@ -3,37 +3,54 @@ import TemplateImg from '../component/TemplateImg';
 import Templateservices from '../component/Templateservices'; // Corrected the import name
 import Navbar from '../component/navbar/navbar';
 import Footer from '../component/footer/footer';
-import Img1 from '../assets/image/kolamren.jpg';
+import Img1 from '../assets/image/IMG-20240618-WA0010.jpg';
 
 const Services = () => {
   const [backgroundImage] = useState(Img1);
   const [subtitle] = useState("A EXPERIENCE FOR THE SENSE");
   const [content] = useState([
     {
-      title: "Kitchen",
+      title: "Services",
       paragraphs: [
-        "The fully equipped, modern kitchen is strategically positioned between the Living & Dining Pavilion and the staff service area.",
-        "Presenting fresh white walls, grey marble work surfaces, a central island bench and immaculate stainless steel appliances, this is both a workspace and a space of inspiration."
+        "Casa Evaliza, boast a dedicated team of staff (their positions and responsibilities outlined below) to service guests in the villa.",
       ]
     }
   ]);
   const [staf] = useState([
     {
-      jabatan: "Chef",
+      jabatan: "Manager :",
       paragraphs: [
-        "Our chef has years of experience in fine dining   ssafsadsfsfsfddesafdsaaf.",
+        "meets and greets guests on arrival, leads the staffing team to meet the expectations of each guest.",
       ]
     },
     {
-      jabatan: "Sous Chef",
+      jabatan: "Butler :",
       paragraphs: [
-        "Assisting the chef, our sous chef ensures every dish is perfect.",
+        "in charge of housekeeping, laundry and Food and Beverage service.",
       ]
-    }
+    },
+    {
+      jabatan: "Driver :",
+      paragraphs: [
+        "a car and driver is included with each rental booking. The driver is knowledgeable about local attractions.",
+      ]
+    },
+    {
+      jabatan: "Security Guard :",
+      paragraphs: [
+        "on-duty at night to ensure the safety and security of the guests and the premises. The complex also has full-time security at its entrance.",
+      ]
+    },
+    {
+      jabatan: "Gardener & Pool Attendant :",
+      paragraphs: [
+        "work discreetly in maintaining the landscape and the pool without disturbing the guests.",
+      ]
+    },
   ]);
 
   const [subheadingText] = useState("Luxury Hotel");
-  const [headingText] = useState("Swimming Pool & Garden");
+  const [headingText] = useState("Services");
 
   return (
     <div>
