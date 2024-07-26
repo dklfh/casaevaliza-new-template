@@ -51,7 +51,6 @@ const Home1 = () => {
             </div>
             <p className="relative z-10 text-xs mb-6 font-barlow">UNIQUE PLACE TO RELAXE & ENJOY</p>
             <h1 className="relative z-10 text-2xl md:text-5xl font-gilda mb-6">CASA EVALIZA HOTEL EXPERIENCE</h1>
-            {/* <button className="relative z-10 bg-coklat tracking-normal px-10 py-3 border-solid border-2 font-gilda border-white">FIND OUT MORE</button> */}
             <a className="btn relative inline-block py-3 px-10 tracking-normal text-white border border-solid font-gilda text-sm border-white cursor-pointer bg-coklat no-underline overflow-hidden uppercase z-10" href="#">find out more</a>
           </motion.div>
         </SwiperSlide>
@@ -73,7 +72,6 @@ const Home1 = () => {
             </div>
             <p className="relative z-10 text-xs mb-6 font-barlow">UNIQUE PLACE TO RELAXE & ENJOY</p>
             <h1 className="relative z-10 text-2xl md:text-5xl font-gilda mb-6">CASA EVALIZA HOTEL IN THE WORLD</h1>
-            {/* <button className="relative z-10 bg-coklat tracking-normal px-10 py-3 border-solid border-2 font-gilda border-white">FIND OUT MORE</button> */}
             <a className="btn relative inline-block py-3 px-10 tracking-normal text-white border border-solid font-gilda text-sm border-white cursor-pointer bg-coklat no-underline overflow-hidden uppercase z-10" href="#">find out more</a>
           </motion.div>
         </SwiperSlide>

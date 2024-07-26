@@ -25,15 +25,15 @@ const OtherService = () => {
           <div className="space-y-3">
             <div className="flex items-center text-coklat">
               <FaPhone className='text-xl' />
-              <p className='ml-3 text-15 tracking-widest text-black font-gilda'>+91 0009988767</p>
+              <p className='ml-3 text-15 tracking-widest text-black font-gilda'>+62 813-3840-0215</p>
             </div>
             <div className="flex items-center text-coklat">
               <CiMail className='text-xl' />
-              <p className='ml-3 text-15 tracking-widest text-black font-gilda'>info@Rudrahotel.com</p>
+              <p className='ml-3 text-15 tracking-widest text-black font-gilda'>ecommerce.casaevaliza@gmail.com</p>
             </div>
             <div className="flex items-center text-coklat">
               <CiGlobe className='text-xl' />
-              <p className='ml-3 text-15 tracking-widest text-black font-gilda'>www.rudra.com</p>
+              <p className='ml-3 text-15 tracking-widest text-black font-gilda'>www.casaevaliza.com</p>
             </div>
           </div>
         </div>

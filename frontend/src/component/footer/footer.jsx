@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../assets/image/logo casa.png'
 import { FaCaretRight } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { Link, useLocation } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -32,7 +33,7 @@ function Footer() {
               </li>
               <li className="flex items-center mb-1.5">
                 <FaCaretRight className='mr-4' />
-                <a href="#" className="block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Press</a>
+                <Link to="/press" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>Press</Link>
               </li>
             </ul>
           </div>

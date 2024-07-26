@@ -258,7 +258,7 @@ function Navbar() {
                   <Link to="/kitchen" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Kitchen</Link>
                 </li>
                 <li>
-                  <Link to="/swimmpingpool" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Swimming Pool & Garden</Link>
+                  <Link to="/swimmingpool" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Swimming Pool & Garden</Link>
                 </li>
                 <li>
                   <Link to="/privategym" className="block px-4 py-2 bg-white hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Private Gym</Link>
@@ -293,7 +293,7 @@ function Navbar() {
             </div>
           </li>
           <li>
-            <Link to="/Locaton" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Location</Link>
+            <Link to="/location" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Location</Link>
           </li>
           <li>
             <Link to="/gallery" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Gallery</Link>

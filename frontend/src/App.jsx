@@ -18,6 +18,7 @@ import Spaservices from "./pages/spaservices"
 import Swimmingpool from "./pages/swimmingpool"
 import Mediaroom from "./pages/mediaroom"
 import Location from "./pages/location"
+import Press from "./pages/press"
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path='/services' element = {<Services/>}></Route>
           <Route path='/spaservices' element = {<Spaservices/>}></Route>
           <Route path='/swimmingpool' element = {<Swimmingpool/>}></Route>
+          <Route path='/press' element = {<Press/>}></Route>
         </Routes>
       </Router>
     </>
