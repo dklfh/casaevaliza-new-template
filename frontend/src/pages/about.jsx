@@ -3,7 +3,8 @@ import Navbar from '../component/navbar/navbar'
 import Footer from '../component/footer/footer'
 import Header from '../component/header'
 import KitchenImg from '../component/TemplateImg'
-import image from '../assets/image/casa-vila-20.jpg'
+import image from '../assets/image/about.jpg'
+import TemplateImg2 from '../component/TemplateImg2';
 
 const about = () => {
     const subtitle = "THE LUXURY HOTEL";
@@ -14,13 +15,13 @@ const about = () => {
         "The sizeable gardens showcase a terraced lawn and a 14-metre swimming pool, together with a poolside 'bale' relaxation pavilion, presenting an ideal setting for weddings, parties and other special events. This inspiring Bali villa is a peaceful oasis in the heart of a trendy district. It is ideal for families and couples alike and has an extensive dedicated staff."
     ];
     const [backgroundImage] = useState(image);
-    const [subheadingText] = useState("Luxury Hotel");
+    const [subheadingText] = useState("What Is Casaevaliza?");
     const [headingText] = useState("About");
 
     return (
         <div>
             <Navbar />
-            <KitchenImg backgroundImage={backgroundImage} subheadingText={subheadingText} headingText={headingText} />
+            <TemplateImg2 image={image} headText={headingText} subText={subheadingText}/>
             <Header subtitle={subtitle} title={title} paragraphs={paragraphs} />
             <Footer />
         </div>

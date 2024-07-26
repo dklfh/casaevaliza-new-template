@@ -31,7 +31,7 @@ const initialSections = [
 
 const Link = () => {
   const [backgroundImage] = useState(Img1);
-  const [subheadingText] = useState("Luxury Hotel");
+  const [subheadingText] = useState("hotel link");
   const [headingText] = useState("Link");
 
   return (

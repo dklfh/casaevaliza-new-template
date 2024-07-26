@@ -21,6 +21,7 @@ import Casa17 from '../assets/image/casa-vila-17.jpg';
 import Casa20 from '../assets/image/casa-vila-20.jpg';
 import TemplateImg from '../component/TemplateImg';
 import Img1 from '../assets/image/galleryhead.jpg';
+import TemplateImg2 from '../component/TemplateImg2';
 
 const Gallery = () => {
   const images = [
@@ -34,7 +35,7 @@ const Gallery = () => {
   return (
     <div>
       <Navbar/>
-      <TemplateImg backgroundImage={backgroundImage} subheadingText={subheadingText} headingText={headingText} />
+      <TemplateImg2 image={Img1} headText={headingText} subText={subheadingText}/>
       <Gallery1 images={images} />
       <Footer/>
     </div>

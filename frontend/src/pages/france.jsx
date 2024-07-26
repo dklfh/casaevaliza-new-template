@@ -5,6 +5,7 @@ import img from '../assets/image/imgfrance.jpg'
 import Templateimg from '../component/TemplateImg'
 import Header from '../component/header'
 import Templatefrance from '../component/Templatefrance';
+import TemplateImg2 from '../component/TemplateImg2';
 
 function France() {
   const [backgroundImage] = useState(img);
@@ -91,15 +92,15 @@ function France() {
   return (
     <div>
       <Navbar />
-      <Templateimg backgroundImage={backgroundImage} subheadingText={subheadingText} headingText={headingText} />
+      <TemplateImg2 image={img} headText={headingText} subText={subheadingText}/>
       <Header subtitle={subtitle} title={title} paragraphs={paragraphs} />
       <Templatefrance textfrance={textfrance1} />
       <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
+      <Templatefrance textfrance={textfrance3} />
+      <Templatefrance textfrance={textfrance4} />
+      <Templatefrance textfrance={textfrance6} />
+      <Templatefrance textfrance={textfrance7} />
+      <Templatefrance textfrance={textfrance5} />
       <Footer />
     </div>
   );

@@ -3,7 +3,8 @@ import TemplateImg from '../component/TemplateImg';
 import Templateservices from '../component/Templateservices'; // Corrected the import name
 import Navbar from '../component/navbar/navbar';
 import Footer from '../component/footer/footer';
-import Img1 from '../assets/image/IMG-20240618-WA0010.jpg';
+import Img1 from '../assets/image/services.jpg';
+import TemplateImg2 from '../component/TemplateImg2';
 
 const Services = () => {
   const [backgroundImage] = useState(Img1);
@@ -49,13 +50,13 @@ const Services = () => {
     },
   ]);
 
-  const [subheadingText] = useState("Luxury Hotel");
+  const [subheadingText] = useState("our hotel services");
   const [headingText] = useState("Services");
 
   return (
     <div>
       <Navbar />
-      <TemplateImg backgroundImage={backgroundImage} subheadingText={subheadingText} headingText={headingText} />
+      <TemplateImg2 image={Img1} headText={headingText} subText={subheadingText}/>
       <Templateservices subtitle={subtitle} content={content} staf={staf} />
       <Footer />
     </div>

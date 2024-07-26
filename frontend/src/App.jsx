@@ -20,11 +20,13 @@ import Mediaroom from "./pages/mediaroom"
 import Location from "./pages/location"
 import Press from "./pages/press"
 import Link from "./pages/link"
+import ScrollToTop from "./ScrollToTop"
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop/>
         <Routes>
           <Route path='/' element = {<Home/>}></Route>
           <Route path='/about' element = {<About/>}></Route>

@@ -18,22 +18,101 @@ function Footer() {
               <h5 className='text-lg font-semibold'>Useful Links</h5>
               <hr className="h-0.5 w-14 ml-1 bg-coklat border-0"></hr>
             </div>
-            <ul className="text-sm font-medium">
+            <ul className="text-sm font-medium grid grid-cols-1 sm:grid-cols-2 gap-x-4">
               <li className="flex items-center mb-1.5">
                 <FaCaretRight className='mr-4' />
-                <a href="#" className="block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Home</a>
+                <Link to="/" className="block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Home</Link>
               </li>
               <li className="flex items-center mb-1.5">
                 <FaCaretRight className='mr-4' />
-                <a href="#" className="block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">About</a>
+                <Link to="/about" className="block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">About Casa Evaliza</Link>
               </li>
               <li className="flex items-center mb-1.5">
                 <FaCaretRight className='mr-4' />
-                <a href="#" className="block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Link</a>
+                <Link to="/acco" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>Accommodation</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/mastersuite" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Master Suite</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/guest" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Guest Bedroom</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/mediaroom" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Media Room</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/swimmingpool" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Swimming Pool & Garden</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/living" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Living & Dining Pavilion</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/facilities" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Facilities</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/kitchen" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Kitchen</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/services" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Services</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/foodbeverages" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Food & Beverages</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/spaservices" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Spa Services</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/location" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Location</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/france" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  France</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/privategym" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>Private Gym</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/gallery" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Gallery</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/contact" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Contact Us</Link>
               </li>
               <li className="flex items-center mb-1.5">
                 <FaCaretRight className='mr-4' />
                 <Link to="/press" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>Press</Link>
+              </li>
+              <li className="flex items-center mb-1.5">
+                <FaCaretRight className='mr-4' />
+                <Link to="/link" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
+                  Link</Link>
               </li>
             </ul>
           </div>

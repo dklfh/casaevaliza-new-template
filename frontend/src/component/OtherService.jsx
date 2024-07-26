@@ -10,6 +10,10 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import services1 from '../assets/image/casa-vila-1.jpg'
+import services2 from '../assets/image/casa-vila-6.jpg'
+import services3 from '../assets/image/casa-vila-3.jpg'
+import services4 from '../assets/image/casa-vila-5.jpg'
 
 const OtherService = () => {
   return (
@@ -63,7 +67,7 @@ const OtherService = () => {
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.1 }}
                 className="bg-white shadow-lg rounded-lg lg:flex-1 mb-14">
-                <img src="https://placehold.co/600x400" alt="Room cleaning" className="w-full" />
+                <img src={services1} alt="Room cleaning" className="w-full" />
                 <div className="p-6 bg-coklat">
                   <h3 className="font-gilda text-2xl font-bold text-white">Classic Balcony Room</h3>
                 </div>
@@ -99,7 +103,7 @@ const OtherService = () => {
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.1 }}
                 className="bg-white shadow-lg rounded-lg lg:flex-1 mb-14">
-                <img src="https://placehold.co/600x400" alt="Room cleaning" className="w-full" />
+                <img src={services2} alt="Room cleaning" className="w-full" />
                 <div className="p-6 bg-coklat">
                   <h3 className="font-gilda text-2xl font-bold text-white">Room Cleaning</h3>
                 </div>
@@ -130,7 +134,7 @@ const OtherService = () => {
 
             <SwiperSlide>
               <div className="bg-white shadow-lg rounded-lg lg:flex-1 mb-14">
-                <img src="https://placehold.co/600x400" alt="Room cleaning" className="w-full" />
+                <img src={services3} alt="Room cleaning" className="w-full" />
                 <div className="p-6 bg-coklat">
                   <h3 className="font-gilda text-2xl font-bold text-white">Superior Double Room</h3>
                 </div>
@@ -161,7 +165,7 @@ const OtherService = () => {
 
             <SwiperSlide>
               <div className="bg-white shadow-lg rounded-lg lg:flex-1 mb-14">
-                <img src="https://placehold.co/600x400" alt="Room cleaning" className="w-full" />
+                <img src={services4} alt="Room cleaning" className="w-full" />
                 <div className="p-6 bg-coklat">
                   <h3 className="font-gilda text-2xl font-bold text-white">Balcony Double Room</h3>
                 </div>

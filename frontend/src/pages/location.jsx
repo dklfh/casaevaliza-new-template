@@ -4,10 +4,11 @@ import Header from '../component/header'
 import Navbar from '../component/navbar/navbar'
 import Footer from '../component/footer/footer'
 import img from '../assets/image/location.jpg'
+import TemplateImg2 from '../component/TemplateImg2';
 
 function Location() {
   const [backgroundImage] = useState(img);
-  const [subheadingText] = useState("LUXURY HOTEL");
+  const [subheadingText] = useState("hotel location");
   const [headingText] = useState("Location");
 
   const subtitle = "PLACE TO RELAX";
@@ -21,7 +22,7 @@ function Location() {
   return (
     <div>
       <Navbar/>
-      <TemplateImg backgroundImage={backgroundImage} subheadingText={subheadingText} headingText={headingText} />
+      <TemplateImg2 image={img} headText={headingText} subText={subheadingText}/>
       <Header subtitle={subtitle} title={title} paragraphs={paragraphs} />
       <Footer/>
     </div>

@@ -6,16 +6,17 @@ import img from '../assets/image/contact.jpg'
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
+import TemplateImg2 from '../component/TemplateImg2';
 
 function Contactus() {
   const [backgroundImage] = useState(img);
-  const [subheadingText] = useState("GET IN TOUCH");
-  const [headingText] = useState("CONTACT US");
+  const [subheadingText] = useState("any question?");
+  const [headingText] = useState("contact us");
 
   return (
     <div>
       <Navbar />
-      <Templateimg backgroundImage={backgroundImage} subheadingText={subheadingText} headingText={headingText} />
+      <TemplateImg2 image={img} headText={headingText} subText={subheadingText}/>
       <section className='py-20'>
         <div className='max-w-1140 lg:px-4 mx-auto lg:flex px-7 max-sm:px-0'>
           <div className="lg:w-2/4 px-4 mb-9 lg:mb-0">

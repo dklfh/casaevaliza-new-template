@@ -6,6 +6,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
+import people1 from '../assets/image/people1.jpeg'
+import people2 from '../assets/image/people2.jpeg'
 
 const WhatClientSay = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 640);
@@ -39,12 +41,14 @@ const WhatClientSay = () => {
                             className='mySwiper'>
 
                             <SwiperSlide>
-                                <div className='px-4 mb-14 lg:mb-0'>
-                                    <img
-                                        className="lg:size-36 size-20 rounded-full border-4 border-white mx-auto"
-                                        src="https://placehold.co/96x96"
-                                        alt="Client Photo"
-                                    />
+                                <div className='px-4 mb-14 lg:mb-0 flex flex-col items-center'>
+                                    <div className="w-36 h-36 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-white">
+                                        <img
+                                            className="object-cover w-full h-full"
+                                            src={people1}
+                                            alt="Client Photo"
+                                        />
+                                    </div>
                                     <div className='flex justify-center'>
                                         <p className="text-gray-200 mb-5 px-7 pt-8 pb-3 font-rubik lg:w-4/5">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -59,19 +63,21 @@ const WhatClientSay = () => {
                             </SwiperSlide>
 
                             <SwiperSlide>
-                                <div className='px-4 mb-14 lg:mb-0'>
-                                    <img
-                                        className="lg:size-36 size-20 rounded-full border-4 border-white mx-auto"
-                                        src="https://placehold.co/96x96"
-                                        alt="Client Photo"
-                                    />
-                                    <div className='flex justify-center'>
+                                <div className="px-4 mb-14 lg:mb-0 flex flex-col items-center">
+                                    <div className="w-36 h-36 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-white">
+                                        <img
+                                            className="object-cover w-full h-full"
+                                            src={people2}
+                                            alt="Client Photo"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center">
                                         <p className="text-gray-200 mb-5 px-7 pt-8 pb-3 font-rubik lg:w-4/5">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                         </p>
                                     </div>
                                     <div className="flex justify-center">
-                                        <RiDoubleQuotesL className='rotate-180 size-10' />
+                                        <RiDoubleQuotesL className="rotate-180 size-10" />
                                     </div>
                                     <h4 className="text-xl font-gilda pt-1 font-bold">Jessica UK</h4>
                                     <p className="text-white text-xs pt-1 font-barlow">General Manager</p>
