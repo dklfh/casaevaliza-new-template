@@ -19,6 +19,7 @@ import Swimmingpool from "./pages/swimmingpool"
 import Mediaroom from "./pages/mediaroom"
 import Location from "./pages/location"
 import Press from "./pages/press"
+import Link from "./pages/link"
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path='/spaservices' element = {<Spaservices/>}></Route>
           <Route path='/swimmingpool' element = {<Swimmingpool/>}></Route>
           <Route path='/press' element = {<Press/>}></Route>
+          <Route path='/Link' element = {<Link/>}></Route>
         </Routes>
       </Router>
     </>
