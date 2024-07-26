@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TemplateImg from '../component/TemplateImg';
-import Template1 from '../component/Template1';
+import Header from '../component/header';
 import Navbar from '../component/navbar/navbar';
 import Footer from '../component/footer/footer';
 import MasterImg1 from '../assets/image/mastersu.jpg';
@@ -22,7 +22,7 @@ const Kitchen = () => {
     <div>
       <Navbar/>
       <TemplateImg backgroundImage={backgroundImage} subheadingText={subheadingText} headingText={headingText} />
-      <Template1 subtitle={subtitle} title={title} paragraphs={paragraphs} />
+      <Header subtitle={subtitle} title={title} paragraphs={paragraphs} />
       <Footer/>
     </div>
   );

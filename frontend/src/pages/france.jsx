@@ -20,9 +20,9 @@ function France() {
 
   const textfrance1 = [
     {
-      titlefrance: "Salon et salle à manger",
+      titlefrance: "Food & Beverage Charges",
       paragraphsfrance: [
-        "Le grand pavillon abritant le salon et la salle à manger offre un toit en Alang Alang et le sol est recouvert de terrazzo blanc cassé. Tout un côte du bâtiment donne sur le jardin et de grandes baies vitrées permettent d'ouvrir complètement la salle sur l'extérieur. Cet espace est parfaitement aéré grâce aux six ventilateurs fixés sur la charpente du toit. A l'une des extrémités de la pièce, une grande table peut accueillir confortablement douze invités",
+        "Food and beverage items are charged based on grocery cost system. Guests will need to provide some money in advance and the staff will do the shopping for you and keep the receipts for your reference.",
         "Au centre, deux sofas richement recouverts de coussins encadrent une table basse ancienne ; à proximité est installé un lit de jour suspendu par des chaines et permettant de se reposer en se balançant.",
         "Enfin, la décoration est complétée par un ancien lit javanais, de nombreux tissus, des bougies ornementales et une belle tête de bouddha. Un équipement audio permet de compléter l'ambiance de l'espace. Une sélection de livres est à la disposition des invités."
       ]
