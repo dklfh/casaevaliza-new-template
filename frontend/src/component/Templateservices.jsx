@@ -9,20 +9,20 @@ const Templateservices = ({ subtitle, content, staf }) => {
           <div key={index} className="mt-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-gilda">{section.title}</h1>
             {section.paragraphs.map((paragraph, pIndex) => (
-              <p key={pIndex} className="text-gray-600 mt-4 leading-relaxed font-barlow text-base sm:text-lg">
+              <p key={pIndex} className="font-barlow text-15 text-text2 mb-5">
                 {paragraph}
               </p>
             ))}
           </div>
         ))}
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-gilda border-b-4 my-12">The Staff</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-[30px] font-gilda border-b-2 mb-7 mt-12">The Staff</h1>
 
         {staf.map((section, index) => (
           <div key={index} className="my-7">
-            <h1 className="text-[30px] sm:text-4xl md:text-[35px] font-gilda">{section.jabatan}</h1>
+            <h1 className="mt-3 mb-1 font-gilda text-[30px] sm:text-4xl md:text-[20px] text-text2 ">{section.jabatan}</h1>
             {section.paragraphs.map((teks, pIndex) => (
-              <p key={pIndex} className="text-gray-600 mt-4 leading-relaxed font-barlow text-base sm:text-lg">
+              <p key={pIndex} className="font-barlow text-15 text-text2 mb-5">
                 {teks}
               </p>
             ))}
