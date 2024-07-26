@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TemplateImg from '../component/TemplateImg';
 import Navbar from '../component/navbar/navbar';
 import Footer from '../component/footer/footer';
-import Img1 from '../assets/image/IMG-20240618-WA0009.jpg';
+import Img1 from '../assets/image/linkimg.jpg';
 import TemplateLinks from '../component/TemplateLinks';
 
 const initialSections = [
