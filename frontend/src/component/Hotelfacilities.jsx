@@ -4,7 +4,7 @@ import { FaKey } from "react-icons/fa6";
 
 const Hotelfacilities = () => {
     return (
-        <div class="max-w-screen-xl mx-[189px] px-4 py-8">
+        <div class="w-screen-xl mx-[189px] px-4 py-8">
             <div class="text-center mb-8">
                 <h2 class="text-[15px] font-barlowcondensed tracking-widest text-gray-400">OUR SERVICES</h2>
                 <h1 class="text-[45px] font-island text-gray-700">Hotel Facilities</h1>
