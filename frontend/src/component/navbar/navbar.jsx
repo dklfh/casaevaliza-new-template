@@ -97,7 +97,7 @@ function Navbar() {
                   </svg>
                 </Link>
                 <div
-                  className={`absolute top-20 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenAccommodation ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
+                  className={`absolute xl:top-20 top-7 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenAccommodation ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
                       <Link to="/mastersuite" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/master')}`}>Master Suite</Link>
@@ -136,7 +136,7 @@ function Navbar() {
                   </svg>
                 </Link>
                 <div
-                  className={`absolute top-20 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenFacilities ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
+                  className={`absolute xl:top-20 top-7 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenFacilities ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
                       <Link to="/kitchen" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/kitchen')}`}>Kitchen</Link>
@@ -172,7 +172,7 @@ function Navbar() {
                   </svg>
                 </Link>
                 <div
-                  className={`absolute top-20 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenServices ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
+                  className={`absolute xl:top-20 top-7 left-0 z-10 font-semibold tracking-wide bg-coklat divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ${isOpenServices ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-2 invisible'}`}>
                   <ul className="uppercase py-1 text-sm text-gray-700 dark:text-gray-400">
                     <li>
                       <Link to="/foodbeverages" className={`block px-4 py-2 hover:bg-black dark:hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out ${isActive2('/foodbeverages')}`}>Food & Beverages</Link>
