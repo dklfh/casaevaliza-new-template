@@ -95,11 +95,11 @@ function France() {
       <Header subtitle={subtitle} title={title} paragraphs={paragraphs} />
       <Templatefrance textfrance={textfrance1} />
       <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
-      <Templatefrance textfrance={textfrance2} />
+      <Templatefrance textfrance={textfrance3} />
+      <Templatefrance textfrance={textfrance4} />
+      <Templatefrance textfrance={textfrance6} />
+      <Templatefrance textfrance={textfrance7} />
+      <Templatefrance textfrance={textfrance5} />
       <Footer />
     </div>
   );
