@@ -35,7 +35,7 @@ const Gallery = () => {
   return (
     <div>
       <Navbar/>
-      <TemplateImg2 image={Img1} headText={headingText} subText={subheadingText}/>
+      <TemplateImg2 image={backgroundImage} headText={headingText} subText={subheadingText}/>
       <Gallery1 images={images} />
       <Footer/>
     </div>
