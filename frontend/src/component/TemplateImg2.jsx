@@ -15,7 +15,7 @@ function TemplateImg2({ image, headText, subText }) {
                 <FaStar />
                 <FaStar />
               </div>
-              <h5 className="text-white text-[18px] font-gilda mb-[13px] uppercase tracking-widest font-semibold">{subText}</h5>
+              <h5 className="text-white text-[10px] md:text-[18px] sm:text-[16px] font-gilda md:mb-[13px] mb-[1px] uppercase tracking-widest font-semibold">{subText}</h5>
               <h1 className="capitalize text-[30px] sm:text-[40px] md:text-[50px] lg:text-6xl text-white mb-[20px] font-gilda">{headText}</h1>
             </div>
           </div>
