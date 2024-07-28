@@ -7,7 +7,7 @@ import BookingForm from '../component/BookingForm';
 
 const book = () => {
   const [backgroundImage] = useState(KitchenImg1);
-  const [subheadingText] = useState("Luxury Hotel");
+  const [subheadingText] = useState("Order  Hotel now");
   const [headingText] = useState("Booking");
 
   return (

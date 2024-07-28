@@ -11,7 +11,7 @@ import Gallery3 from '../assets/image/home3.jpg';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
-const Home1 = () => {
+const Home1 = ({ scrollToAbout }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 640);
 
   useEffect(() => {
@@ -51,7 +51,12 @@ const Home1 = () => {
             </div>
             <p className="relative z-10 text-xs mb-6 font-barlow">UNIQUE PLACE TO RELAXE & ENJOY</p>
             <h1 className="relative z-10 text-2xl md:text-5xl font-gilda mb-6">CASA EVALIZA HOTEL EXPERIENCE</h1>
-            <a className="btn relative inline-block py-3 px-10 tracking-normal text-white border border-solid font-gilda text-sm border-white cursor-pointer bg-coklat no-underline overflow-hidden uppercase z-10" href="#">find out more</a>
+            <a 
+              className="btn relative inline-block py-3 px-10 tracking-normal text-white border border-solid font-gilda text-sm border-white cursor-pointer bg-coklat no-underline overflow-hidden uppercase z-10" 
+              onClick={scrollToAbout} // Use the scrollToAbout function here
+            >
+              find out more
+            </a>
           </motion.div>
         </SwiperSlide>
         <SwiperSlide className="text-center tracking-custom relative flex flex-col items-center justify-center h-900 text-white">
@@ -72,7 +77,12 @@ const Home1 = () => {
             </div>
             <p className="relative z-10 text-xs mb-6 font-barlow">UNIQUE PLACE TO RELAXE & ENJOY</p>
             <h1 className="relative z-10 text-2xl md:text-5xl font-gilda mb-6">CASA EVALIZA HOTEL IN THE WORLD</h1>
-            <a className="btn relative inline-block py-3 px-10 tracking-normal text-white border border-solid font-gilda text-sm border-white cursor-pointer bg-coklat no-underline overflow-hidden uppercase z-10" href="#">find out more</a>
+            <a 
+              className="btn relative inline-block py-3 px-10 tracking-normal text-white border border-solid font-gilda text-sm border-white cursor-pointer bg-coklat no-underline overflow-hidden uppercase z-10" 
+              onClick={scrollToAbout} // Use the scrollToAbout function here
+            >
+              find out more
+            </a>
           </motion.div>
         </SwiperSlide>
         <SwiperSlide className="text-center tracking-custom relative flex flex-col items-center justify-center h-900 text-white">
@@ -93,13 +103,17 @@ const Home1 = () => {
             </div>
             <p className="relative z-10 text-xs mb-6 font-barlow">UNIQUE PLACE TO RELAXE & ENJOY</p>
             <h1 className="relative z-10 text-2xl md:text-5xl font-gilda mb-6">SUPERIOR RESTAURENT IN THE WORLD</h1>
-            <a className="btn relative inline-block py-3 px-10 tracking-normal text-white border border-solid font-gilda text-sm border-white cursor-pointer bg-coklat no-underline overflow-hidden uppercase z-10" href="#">find out more</a>
+            <a 
+              className="btn relative inline-block py-3 px-10 tracking-normal text-white border border-solid font-gilda text-sm border-white cursor-pointer bg-coklat no-underline overflow-hidden uppercase z-10" 
+              onClick={scrollToAbout} // Use the scrollToAbout function here
+            >
+              find out more
+            </a>
           </motion.div>
         </SwiperSlide>
       </Swiper>
     </div>
-
   )
 }
 
-export default Home1
+export default Home1;

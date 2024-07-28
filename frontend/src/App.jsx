@@ -48,8 +48,8 @@ function App() {
           <Route path='/spaservices' element = {<Spaservices/>}></Route>
           <Route path='/swimmingpool' element = {<Swimmingpool/>}></Route>
           <Route path='/press' element = {<Press/>}></Route>
-          <Route path='/Link' element = {<Link/>}></Route>
-          <Route path='/Book' element = {<Book/>}></Route>
+          <Route path='/link' element = {<Link/>}></Route>
+          <Route path='/book' element = {<Book/>}></Route>
         </Routes>
       </Router>
     </>
