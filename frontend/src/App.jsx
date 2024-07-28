@@ -21,6 +21,7 @@ import Location from "./pages/location"
 import Press from "./pages/press"
 import Link from "./pages/link"
 import ScrollToTop from "./ScrollToTop"
+import Book from "./pages/book"
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <Route path='/swimmingpool' element = {<Swimmingpool/>}></Route>
           <Route path='/press' element = {<Press/>}></Route>
           <Route path='/Link' element = {<Link/>}></Route>
+          <Route path='/Book' element = {<Book/>}></Route>
         </Routes>
       </Router>
     </>
