@@ -9,7 +9,7 @@ import press6 from '../assets/image/press-6.jpeg'
 const Presscard = () => {
   return (
     <div className='py-20'>
-      <div className='px-4 mx-auto max-w-1140'>
+      <div className='px-8 mx-auto max-w-1140'>
         <div className='flex flex-col space-y-11'>
           <div className="bg-bgcoklat flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2 h-auto">

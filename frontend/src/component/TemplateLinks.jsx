@@ -2,7 +2,7 @@ import React from 'react';
 
 const TemplateLinks = ({ sections }) => {
   return (
-    <div className="max-w-4xl mx-auto mt-10 p-4 sm:p-8">
+    <div className="max-w-1140 mx-auto pt-10 p-4 sm:py-20">
       <h1 className="text-4xl sm:text-[70px] font-island mb-4">Links</h1>
 
       {sections.map((section, index) => (

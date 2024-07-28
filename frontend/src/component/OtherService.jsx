@@ -18,7 +18,7 @@ import services4 from '../assets/image/casa-vila-5.jpg'
 const OtherService = () => {
   return (
     <div className='bg-bgcoklat'>
-      <div className="xl:max-w-1140 lg:max-w-960 md:max-w-2xl max-w-lg px-4 mx-auto py-100 flex flex-col lg:flex-row lg:space-x-8">
+      <div className="xl:max-w-1140 lg:max-w-960 md:max-w-2xl max-w-lg px-8 mx-auto py-100 flex flex-col lg:flex-row lg:space-x-8">
         <div className="flex-1 mb-8 lg:mb-0 lg:w-2/6">
           <div className='w-fit text-center mb-4'>
             <h3 className="text-coklat text-15 tracking-custom uppercase font-barlowcondensed">Best Prices</h3>

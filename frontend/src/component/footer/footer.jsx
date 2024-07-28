@@ -5,6 +5,12 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { Link, useLocation } from 'react-router-dom';
 
 function Footer() {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path ? 'text-coklat' : '';
+  };
+
   return (
     <div>
       <footer className='py-20 font-gilda bg-footer'>
@@ -20,99 +26,84 @@ function Footer() {
             </div>
             <ul className="text-sm font-medium grid grid-cols-1 sm:grid-cols-2 gap-x-4">
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/" className="block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">Home</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/')}`} />
+                <Link to="/" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/')}`}>Home</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/about" className="block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300">About Casa Evaliza</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/about')}`} />
+                <Link to="/about" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/about')}`}>About Casa Evaliza</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/acco" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>Accommodation</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/acco')}`} />
+                <Link to="/acco" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/acco')}`}>Accommodation</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/mastersuite" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Master Suite</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/mastersuite')}`} />
+                <Link to="/mastersuite" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/mastersuite')}`}>Master Suite</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/guest" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Guest Bedroom</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/guest')}`} />
+                <Link to="/guest" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/guest')}`}>Guest Bedroom</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/mediaroom" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Media Room</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/mediaroom')}`} />
+                <Link to="/mediaroom" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/mediaroom')}`}>Media Room</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/swimmingpool" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Swimming Pool & Garden</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/swimmingpool')}`} />
+                <Link to="/swimmingpool" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/swimmingpool')}`}>Swimming Pool & Garden</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/living" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Living & Dining Pavilion</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/living')}`} />
+                <Link to="/living" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/living')}`}>Living & Dining Pavilion</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/facilities" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Facilities</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/facilities')}`} />
+                <Link to="/facilities" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/facilities')}`}>Facilities</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/kitchen" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Kitchen</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/kitchen')}`} />
+                <Link to="/kitchen" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/kitchen')}`}>Kitchen</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/services" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Services</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/services')}`} />
+                <Link to="/services" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/services')}`}>Services</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/foodbeverages" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Food & Beverages</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/foodbeverages')}`} />
+                <Link to="/foodbeverages" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/foodbeverages')}`}>Food & Beverages</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/spaservices" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Spa Services</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/spaservices')}`} />
+                <Link to="/spaservices" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/spaservices')}`}>Spa Services</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/location" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Location</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/location')}`} />
+                <Link to="/location" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/location')}`}>Location</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/france" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  France</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/france')}`} />
+                <Link to="/france" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/france')}`}>France</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/privategym" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>Private Gym</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/privategym')}`} />
+                <Link to="/privategym" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/privategym')}`}>Private Gym</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/gallery" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Gallery</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/gallery')}`} />
+                <Link to="/gallery" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/gallery')}`}>Gallery</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/contact" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Contact Us</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/contact')}`} />
+                <Link to="/contact" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/contact')}`}>Contact Us</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/press" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>Press</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/press')}`} />
+                <Link to="/press" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/press')}`}>Press</Link>
               </li>
               <li className="flex items-center mb-1.5">
-                <FaCaretRight className='mr-4' />
-                <Link to="/link" className='block rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300'>
-                  Link</Link>
+                <FaCaretRight className={`mr-4 ${isActive('/link')}`} />
+                <Link to="/link" className={`block rounded lg:hover:text-coklat lg:p-0 transition-colors duration-300 ${isActive('/link')}`}>Link</Link>
               </li>
             </ul>
           </div>
@@ -130,7 +121,6 @@ function Footer() {
             </a>
           </div>
         </div>
-
       </footer>
       <div className='p-2 text-center text-15'>
         <p className='font-barlow text-slate-600'>Copyright © <a href='#' className='text-black'>Casa Evaliza all rights reserved.</a> </p>

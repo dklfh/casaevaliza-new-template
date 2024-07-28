@@ -15,7 +15,7 @@ const about = () => {
         "The sizeable gardens showcase a terraced lawn and a 14-metre swimming pool, together with a poolside 'bale' relaxation pavilion, presenting an ideal setting for weddings, parties and other special events. This inspiring Bali villa is a peaceful oasis in the heart of a trendy district. It is ideal for families and couples alike and has an extensive dedicated staff."
     ];
     const [backgroundImage] = useState(image);
-    const [subheadingText] = useState("What Is Casaevaliza?");
+    const [subheadingText] = useState("What Is Casa evaliza?");
     const [headingText] = useState("About");
 
     return (

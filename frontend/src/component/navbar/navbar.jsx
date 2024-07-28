@@ -83,7 +83,7 @@ function Navbar() {
                   className={`flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/acco')}`}>
                   Accommodation
                   <svg
-                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenAccommodation ? 'rotate-180' : ''}`}
+                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenAccommodation ? 'rotate-180' : 'text-gray-400'}`}
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -122,7 +122,7 @@ function Navbar() {
                   className={`flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/facilities')}`}>
                   Facilities
                   <svg
-                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenFacilities ? 'rotate-180' : ''}`}
+                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenFacilities ? 'rotate-180' : 'text-gray-400'}`}
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -158,7 +158,7 @@ function Navbar() {
                   className={`flex items-center py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent transition-colors duration-300 ${isActive('/services')}`}>
                   Services
                   <svg
-                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenServices ? 'rotate-180' : ''}`}
+                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-300 ${isOpenServices ? 'rotate-180' : 'text-gray-400'}`}
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -214,7 +214,7 @@ function Navbar() {
               <Link to="/acco" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Accommodation</Link>
               <svg
                 onClick={() => setIsAccommodationDropdownOpen(!isAccommodationDropdownOpen)}
-                className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isAccommodationDropdownOpen ? 'rotate-180' : ''}`}
+                className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isAccommodationDropdownOpen ? 'rotate-180' : 'text-gray-400'}`}
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -244,7 +244,7 @@ function Navbar() {
               <Link to="/facilities" className="block py-2 px-3 rounded lg:hover:bg-transparent lg:border-0 hover:text-coklat lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Facilities</Link>
               <svg
                 onClick={() => setIsFacilitiesDropdownOpen(!isFacilitiesDropdownOpen)}
-                className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isFacilitiesDropdownOpen ? 'rotate-180' : ''}`}
+                className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isFacilitiesDropdownOpen ? 'rotate-180' : 'text-gray-400'}`}
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -273,7 +273,7 @@ function Navbar() {
               </Link>
               <svg
                 onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-                className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isServicesDropdownOpen ? 'rotate-180' : ''}`}
+                className={`w-2.5 h-2.5 ms-2.5 transition-transform transform cursor-pointer duration-300 ease-in-out ${isServicesDropdownOpen ? 'rotate-180' : 'text-gray-400'}`}
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

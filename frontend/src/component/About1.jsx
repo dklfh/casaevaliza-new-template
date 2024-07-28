@@ -5,7 +5,7 @@ const About1 = () => {
   return (
     <div className="">
       <div className="flex justify-center items-center py-20">
-        <div className="xl:max-w-1140 lg:max-w-960 md:max-w-2xl max-w-lg px-4 mx-auto py-100 flex flex-col lg:flex-row lg:space-x-8 gap-8">
+        <div className="xl:max-w-1140 lg:max-w-960 md:max-w-2xl max-w-lg px-8 mx-auto py-100 flex flex-col lg:flex-row lg:space-x-8 gap-8">
           <div className='min-w-lg'>
             <img
               src={img}

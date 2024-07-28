@@ -27,7 +27,7 @@ const Hotelfacilities = () => {
 
     return (
         <div className="py-20">
-            <div className='max-w-1140 px-4 mx-auto'>
+            <div className='max-w-1140 px-8 mx-auto'>
                 <div className="text-center mb-8">
                     <h3 className="text-15 font-barlowcondensed tracking-custom text-coklat">OUR SERVICES</h3>
                     <h1 className="text-45 font-island text-text">Hotel Facilities</h1>

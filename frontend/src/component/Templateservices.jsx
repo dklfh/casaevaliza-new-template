@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa6";
 const Templateservices = ({ subtitle, content, staf }) => {
   return (
     <div className="py-20">
-      <div className="max-w-1140 px-4 mx-auto">
+      <div className="max-w-1140 px-8 mx-auto">
         {content.map((section, index) => (
           <div key={index} className="mt-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-gilda">{section.title}</h1>
